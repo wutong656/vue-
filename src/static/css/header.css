@@ -1,0 +1,39 @@
+* { 
+  margin:0; padding: 0;
+}
+.fl {
+  float: left
+}
+.fr {
+  float: right
+}
+a {
+  text-decoration: none;
+}
+img,
+input,
+button {
+    outline: none;
+}
+ul li,
+ol li {
+    list-style: none;
+}
+/* 清除浮动 */
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+/* 兼容ie6 7 */
+
+.clearfix {
+    *zoom: 1;
+}
